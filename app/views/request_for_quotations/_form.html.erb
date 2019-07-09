@@ -1,0 +1,9 @@
+<%= form_for(@request_for_quotation) do |f| %>
+  <%= f.label :competency %>
+  <%= f.text_field :competency %>
+  <%= f.label :resource %>
+  <%= f.text_field :resource %>
+  <%= f.label :efforts %>
+  <%= f.text_field :efforts %>
+  <%= f.submit "Create" %>
+<% end %>

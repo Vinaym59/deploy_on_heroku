@@ -1,0 +1,17 @@
+<h1>Table For Quotation List</h1>
+<table>
+    <thead>
+        <th>competency</th>
+        <th>resource</th>
+        <th>efforts</th>
+    </thead>
+    <tbody>
+<% @request_for_quotations.each do |rq| %>
+    <tr>
+        <td><%= rq.competency %></td>
+        <td><%= rq.resource %></td>
+        <td><%= rq.efforts %></td>
+    </tr>
+<% end %>
+    </tbody>
+</table>

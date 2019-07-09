@@ -1,0 +1,12 @@
+<h1>New Tickets</h1>
+<%= form_for(@ticket) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br/><br/>
+  <%= f.label :seat_id_seq %>
+  <%= f.text_field :seat_id_seq %><br/><br/>
+  <%= f.label :price_paid %>
+  <%= f.text_field :price_paid %><br/><br/>
+  <%= f.label :email_address %>
+  <%= f.text_field :email_address %><br/><br/>
+  <%= f.submit "Update" %>
+<% end %>

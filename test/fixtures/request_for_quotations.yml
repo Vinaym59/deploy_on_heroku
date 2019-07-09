@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  competency: MyString
+  resource: MyString
+  efforts: 1.5
+  quotation: one
+
+two:
+  competency: MyString
+  resource: MyString
+  efforts: 1.5
+  quotation: two

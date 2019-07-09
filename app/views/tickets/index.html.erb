@@ -1,0 +1,25 @@
+<h1>Ticket Submited</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Seat Id Seq</th>
+      <th>Price Paid</th>
+      <th>Email Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tickets.each do |tick| %>
+      <tr>
+        <td><%= tick.name %></td>
+        <td><%= tick.seat_id_seq %></td>
+        <td><%= tick.price_paid %></td>
+        <td><%= tick.email_address %></td>
+        <td><%= link_to 'edit', edit_ticket_path(tick) %></td>
+        <td><%= link_to 'Show', tick %></td>
+        <td><%= link_to 'Delete', tick, method: :delete, data: {confirm: 'data Delete are you confirm?'} %>
+      </tr>
+      <% end %>
+  </tbody>
+</table>
+

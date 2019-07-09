@@ -1,0 +1,17 @@
+<div>
+<h1>Table For Country List</h1>
+  <table>
+      <thead>
+          <th>Name</th>
+          <th>Location</th>
+      </thead>
+    <tbody>
+<% @countries.each do |cu| %>
+    <tr>
+      <td> <%= cu.name %> </td>
+      <td> <%= cu.location %></td>
+    </tr>
+<% end %>
+    </tbody>
+  </table>
+</div>

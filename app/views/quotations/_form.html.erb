@@ -1,0 +1,9 @@
+<%= form_for(@quotation) do |f| %>
+  <%= f.label :project_name %>
+  <%= f.text_field :project_name %><br/><br/>
+  <%= f.label :client_name %>
+  <%= f.text_field :client_name %><br/><br/>
+  <%= f.label :project_type %>
+  <%= f.text_field :project_type %><br/><br/>
+  <%= f.submit "Create" %>
+<% end %>

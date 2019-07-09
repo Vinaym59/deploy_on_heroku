@@ -1,0 +1,20 @@
+<h1>Ticket Submited</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Seat Id Seq</th>
+      <th>Price Paid</th>
+      <th>Email Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @ticket.name %></td>
+      <td><%= @ticket.seat_id_seq %></td>
+      <td><%= @ticket.price_paid %></td>
+      <td><%= @ticket.email_address %></td>
+    </tr>
+  </tbody>
+</table>
+  <%= link_to 'Back', tickets_path %>

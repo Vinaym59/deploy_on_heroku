@@ -1,0 +1,19 @@
+<h1>Country Creation:</h1>
+<%= form_for @country do |f| %>
+  <p>
+    <%= f.label 'Name' %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label 'Location' %>
+    <%= f.text_field :location %></br>
+  </p>
+
+  <%= f.fields_for :states do |builder| %>
+    <p>
+      <%= builder.label :state_name, "State" %>
+      <%= builder.text_area :state_name, :rows => 3 %>
+    </p>
+  <% end %>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

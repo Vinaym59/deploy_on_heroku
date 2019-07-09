@@ -1,0 +1,17 @@
+<h1>Table For Quotation List</h1>
+<table>
+    <thead>
+        <th>project_name</th>
+        <th>client_name</th>
+        <th>project_type</th>
+    </thead>
+    <tbody>
+<% @quotations.each do |qt| %>
+    <tr>
+        <td><%= qt.project_name %></td>
+        <td><%= qt.client_name %></td>
+        <td><%= qt.project_type %></td>
+    </tr>
+<% end %>
+    </tbody>
+</table>
